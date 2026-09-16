@@ -1,9 +1,21 @@
 {
-  "scripts": {
-    "build": "node ./test/index.js"
+  "name": "down-img-tool",
+  "version": "2.0.0",
+  "description": "专职网络图片下载工具（壳工程）：实现来自 monorepo 的 @wgl-m/down-img，本地仅保留入口与下载清单",
+  "type": "module",
+  "private": true,
+  "bin": {
+    "down-img": "bin/cli.js"
   },
-  "devDependencies": {
-    "await-to-js": "^3.0.0",
-    "request": "^2.88.2"
+  "scripts": {
+    "down": "node bin/cli.js",
+    "smoke": "node test/smoke.mjs"
+  },
+  "engines": {
+    "node": ">=18.17"
+  },
+  "packageManager": "pnpm@9.15.0",
+  "dependencies": {
+    "@wgl-m/down-img": "workspace:*"
   }
 }

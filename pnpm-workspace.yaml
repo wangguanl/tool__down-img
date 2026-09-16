@@ -1,0 +1,6 @@
+packages:
+  # 本项目（壳工程）
+  - '.'
+  # 跨仓消费 monorepo 的 @wgl-m/down-img（未发版时的 workspace 链接，
+  # 见 wgl-monorepo/docs/local-usage.md；发版后移除本行并改为正式依赖）
+  - '../wgl-monorepo/packages/down-img'
